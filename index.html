@@ -1,14 +1,135 @@
 <html>
   <head>
-    <style>
-      body {
-      background-color: #f7f7ea;
-      }
-    </style>
-    <title>My blog</title>
+    <title>Ella's Blog</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700"
+    />
+    <link rel="Stylesheet" href="styles/main.css" />
+    <link rel="Stylesheet" href="styles/home.css" />
+  </head>
+
   <body>
-    <h1>Kia ora Taiao!</h1> 
-    <p> This is the beginning of my website home page.</p>
-    <p> It will eventually contain a list of links to all my blogs. </p>
+    <div class="margin-control">
+      <!--HERO BEGIN-->
+      <div class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            <div class="hero__title-topline">A</div>
+            Coding Journey.
+          </h1>
+          <div class="hero__strapline">
+            One girl's adventures in software development.
+          </div>
+        </div>
+        <!--HERO NAV BEGIN-->
+        <div class="heronav">
+          <div class="dropdown">
+            <a class="dropdown__trigger" href="#sprints">Sprints</a>
+            <div class="dropdown__content-wrapper">
+              <div class="dropdown__content">
+                <a class="dropdown__link" href="#sprint-one">Sprint One</a>
+                <a class="dropdown__link" href="#sprint-two">Sprint Two</a>
+                <a class="dropdown__link" href="#sprint-three">Sprint Three</a>
+                <a class="dropdown__link" href="#sprint-four">Sprint Four</a>
+                <a class="dropdown__link" href="#sprint-five">Sprint Five</a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a class="dropdown__trigger" href="#reflection">Reflections</a>
+          </div>
+        </div>
+        <!--HERO NAV END-->
+      </div>
+      <!--HERO END-->
+
+      <!--TILES BEGIN-->
+      <div class="tile-container">
+        <a class="tile" href="/blog/te-houtaewa-template.html">
+          <div class="tile__image" style="background: #dcd6c4">
+            <div class="tile__image-strapline">
+              <div class="tile__image-strapline-text">20th January 2023</div>
+            </div>
+          </div>
+          <div class="tile__info">
+            <div class="tile__info-title">The Story of Te Houtaewa.</div>
+            <p class="tile__info-description">
+              Follow the story of Te Houtaewa - a famous athlete and a
+              descendant of the Te Aupōuri chief Te Ikanui.
+            </p>
+            <div class="tile__info-read-more">Read More</div>
+          </div>
+        </a>
+        <a class="tile" href="/blog/html-css.html">
+          <div class="tile__image" style="background: #f4eae2">
+            <div class="tile__image-strapline"></div>
+          </div>
+          <div class="tile__info">
+            <div class="tile__info-title">
+              Relative, Absolute and Fixed Positioning.
+            </div>
+            <p class="tile__info-description">
+              This post explores the importance and differences of relative,
+              absolute and fixed positioning.
+            </p>
+            <div class="tile__info-read-more">Read More</div>
+          </div>
+        </a>
+        <a
+          class="tile"
+          href="../reflections-devacademy/sprint-1/my-reflections-sprint-1.md"
+        >
+          <div class="tile__image" style="background: #f9ead7">
+            <div class="tile__image-strapline"></div>
+          </div>
+          <div class="tile__info">
+            <div class="tile__info-title">Reflection One.</div>
+            <p class="tile__info-description">
+              Ella's reflections during Dev Academy's Sprint One.
+            </p>
+            <div class="tile__info-read-more">Read More</div>
+          </div>
+        </a>
+        <a class="tile" href="#reflection-two">
+          <div class="tile__image" style="background: #f4eed8">
+            <div class="tile__image-strapline"></div>
+          </div>
+          <div class="tile__info">
+            <div class="tile__info-title">Reflection Two.</div>
+            <p class="tile__info-description">
+              Ella's reflections during Dev Academy's Sprint Two.
+            </p>
+            <div class="tile__info-read-more">Read More</div>
+          </div>
+        </a>
+        <a
+          class="tile"
+          href="../reflections-devacademy/sprint-1/my-reflections-sprint-1.md"
+        >
+          <div class="tile__image" style="background: #ffeae1">
+            <div class="tile__image-strapline"></div>
+          </div>
+          <div class="tile__info">
+            <div class="tile__info-title">Learning Plan.</div>
+            <p class="tile__info-description">
+              Ella's learning plan for Dev Academy and general life!
+            </p>
+            <div class="tile__info-read-more">Read More</div>
+          </div>
+        </a>
+      </div>
+      <!--TILES END-->
+    </div>
   </body>
 </html>
