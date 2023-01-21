@@ -1,0 +1,67 @@
+.margin-control {
+  max-width: 550px;
+  padding: 100px;
+}
+
+/*==== TOPNAV BEGIN ====*/
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  font-weight: 700;
+}
+
+.topnav a {
+  color: #000000;
+}
+
+.topnav__logo {
+  text-decoration: none;
+  font-family: Lora;
+  font-size: 1.25em;
+}
+
+.topnav__link {
+  text-decoration: none;
+}
+
+/*==== TOPNAV END ====*/
+
+/*==== HEADING BEGIN ====*/
+.heading {
+  font-family: Lora;
+  text-align: left;
+  padding: 50px 0 35px;
+}
+
+.heading__title {
+  font-size: 60px;
+  margin: 0.67em 0 0.2em;
+}
+
+.heading__strapline {
+  font-weight: 700;
+  font-size: 20px;
+  color: #777;
+}
+
+/*==== HEADING END ====*/
+
+/*==== BLOG CONTENT BEGIN ====*/
+.blog-content {
+  max-width: 550px;
+  margin: auto;
+  letter-spacing: 0.03em;
+  line-height: 1.5em;
+  font-size: 14px;
+}
+
+.blog-content section:not(:last-child) {
+  margin-bottom: 2.5em;
+}
+
+.blog-content section section {
+  margin: 1em 2em;
+}
+
+/*==== BLOG CONTENT END ====*/
