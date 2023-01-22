@@ -65,3 +65,11 @@
 }
 
 /*==== BLOG CONTENT END ====*/
+
+/*==== IMAGES BEGIN ====*/
+img {
+  display: block;
+  margin: 0 auto;
+}
+/*==== IMAGES END ====*/
+

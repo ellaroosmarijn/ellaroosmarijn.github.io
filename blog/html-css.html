@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Relative, Absolute and Fixed Positioning.</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700"
+    />
+    <link rel="Stylesheet" href="/styles/main.css" />
+    <link rel="Stylesheet" href="/styles/blog.css" />
+  </head>
+
+  <body>
+    <div class="margin-control">
+      <!--TOPNAV BEGIN-->
+      <div class="topnav">
+        <a class="topnav__logo" href="/">A Coding Journey.</a>
+        <a class="topnav__link" href="/">Home</a>
+      </div>
+      <!--TOPNAV END-->
+
+      <!--HERO BEGIN-->
+      <div class="heading">
+        <h1 class="heading__title">Relative, Absolute and Fixed Positioning</h1>
+        <p class="heading__strapline">Sprint Two</p>
+      </div>
+      <!--HERO END-->
+
+      <!--BLOG CONTENT BEGIN-->
+      <div class="blog-content">
+        <section>
+          <strong>CSS Positioning.</strong>
+          <p>
+            The CSS position property defines the location, or position, of an
+            element in a document. To determine its final position, one would
+            define the offsetting distance from the left, right, top or bottom
+            of a position property. The syntax for this is:
+            <code>position: relative;</code>, <code>position: absolute;</code>,
+            <code>posiiton: fixed;</code>.
+          </p>
+          <p>
+            When offsetting, a positive value will move the element inwards, and
+            if a negative value is used it will offset the element outwards, as
+            shown on the diagram to the right. However, it is important to note
+            that without a defined position type, the directional properties
+            will have no effect.
+          </p>
+          <img
+            src="https://blog.openreplay.com/images/understanding-css-positioning/images/image01.png"
+            alt="Element positioning image"
+            width="250px"
+          />
+          <p>
+            Positional properties provide a foundation for the directional
+            properties to work with. The following are the five positional
+            properties:
+          </p>
+          <ol>
+            <li>Static (default),</li>
+            <li>Realtive,</li>
+            <li>Absolute,</li>
+            <li>Fixed, and</li>
+            <li>Sticky.</li>
+          </ol>
+          <p>
+            This explanation will only discuss relative, absolute and fixed
+            positioning.
+          </p>
+        </section>
+        <section>
+          <strong>Relative Positioning</strong>
+          <p>
+            Elements with <code>position: realtive;</code> remain in the normal
+            flow of the document, so that even once it has been repositioned
+            other elemets around it continue to act as though it hasn't moved.
+          </p>
+          <p>
+            To move or offset the element, the left, right, top and bottom
+            values are applied. In doing this, the developer will need to
+            specify how many pixels (px) the element is to move. It will then
+            move according to its original position.
+          </p>
+          <p>For example, if we had a red box with the original position of</p>
+          <code
+            >.red-box{ width: 50%; height: 40vh; background: red; position:
+            relative; }
+          </code>
+          <p>then it would look like the image below.</p>
+          <img
+            src="https://blog.openreplay.com/images/understanding-css-positioning/images/image06.png"
+            alt="Realtive positioning original position"
+            width="250px"
+          />
+          <p>
+            We can see here that the red box appears in the center of the sreen.
+            It would remain in this position ven if we tried to move the element
+            by a value of 0 <code>left: 0; top: 0;</code>, it remains at the
+            same position. This is because moving by a value of 0 would no
+            effect.
+          </p>
+          <p>
+            So what would happen if we modified the positioning so that the code
+            looked like:
+          </p>
+          <code>
+            red-box{ width: 50%; height: 40vh; background: red; position:
+            relative; left: 120px; top: 120px; }
+          </code>
+          <p>
+            <em
+              >Note: the only thing that has changed in the code is
+              <code>left: 120px;</code> and <code>top: 120px;</code>.</em
+            >
+          </p>
+          <p>Let's see the changes in the image below:</p>
+          <img
+            src="https://blog.openreplay.com/images/understanding-css-positioning/images/image07.png"
+            alt="Realtive positioning new position"
+            width="250px"
+          />
+          <p>
+            We can see that the boxed moved away from it's original position by
+            120px from the top and 120px from the left.
+          </p>
+        </section>
+        <section>
+          <strong>Absolute Positioning</strong>
+          <p>
+            Elements with <code>position: absolute;</code> are removed from the
+            normal flow of the document, so that other elements around it will
+            act as though it is no longer there. Absolute elements are
+            positioned according to the closest positioned parent (nearest
+            containing element with an assigned position). It is important that
+            the parent has been positioned using
+            <code>position: relative;</code>. If there happens to be no parent,
+            then the element will be posiitoned according to the initial
+            containing block.
+          </p>
+          <p>
+            For example, if we set the red box to
+            <code>position: relative;</code> and create a new blue box with
+            <code>positon: absolute;</code>, so that the new code looks like:
+          </p>
+          <code>
+            .red-box{ display: flex; justify-content: center; align-items:
+            center; width: 50%; height: 40vh; background: red; position:
+            relative; }
+          </code>
+          <div>
+            <code>
+              .blue-box{ background: blue; width: 40%; height: 40%; position:
+              absolute; }
+            </code>
+          </div>
+          <p>Then the box positioning would look like the image below:</p>
+          <img
+            src="https://blog.openreplay.com/images/understanding-css-positioning/images/image08.png"
+            alt="Position absolute original position"
+            width="250px"
+          />
+          <p>
+            Here we can seee that the blue box has positioned itself with the
+            centre of the parent (the red box). This is because no specific
+            parametes have been set. Now, let's see what happens when we move
+            the blue box by setting a parameter of <code>top: 0;</code>, so that
+            the new code looked like:
+          </p>
+          <code
+            >.blue-box{ background: blue; width: 40%; height: 40%; position:
+            absolute; top: 0; }
+          </code>
+          <p>Let's see the changes in the image below:</p>
+          <img
+            src="https://blog.openreplay.com/images/understanding-css-positioning/images/image09.png"
+            alt="Position absolute new position"
+            width="250px"
+          />
+          <p>
+            Here we can see that the blue box has moved to the top of the parent
+            element (the red box). This is because it has moved according to the
+            parent element, so that a top value of 0 positions the blue box's
+            top edge with a distance of 0px from the parent's top edge.
+          </p>
+        </section>
+        <section>
+          <strong>Fixed Positioning</strong>
+          <p>
+            Like elements with <code>position: absolute;</code>, elements with
+            <code>position: fixed;</code> are also removed from the normal flow
+            of the document. But unlike the absolute positioning, a fixed
+            positon element is positioned relative to the
+            <code> html </code> element (the browser window). This means that
+            the element will always remain fixed at the specified location,
+            regardless of a user scrolling the page. A common example of a fixed
+            element is a header on a website that remains in place, even after
+            scrolling further down the page. Let's created our own fixed
+            element.
+          </p>
+          <p>
+            Begin by setting the blue box to
+            <code>position: fixed;</code> and create a new green box with
+            <code>positon: relative;</code> to see the effect of the fixed
+            position while scrolling. The code should now look like:
+          </p>
+          <div>
+          <code>
+            .red-box{ width: 50%; height: 40vh; background: red; position:
+            relative; }
+          </code>
+        </div>
+        <div>
+          <code>
+            .blue-box{ background: blue; width: 20%; height: 20%; position:
+            fixed; top: 50px; right: 50px; }
+          </code>
+        </div>
+        <div>
+          <code>
+            .green-box{ width: 50%; height: 40vh; background: green; position:
+            relative; }
+          </code>
+        </div>
+          <p>Let's see the changes in the video below:</p>
+          <video width="320" height="240" controls>
+            <source
+              src="/images/video-fixed-positioning.mov"
+              type="video/mp4"
+            />
+          </video>
+          <p>
+            Here we can see that the blue box is positioned according to the
+            screen and is fixed in that position when you scroll.
+          </p>
+        </section>
+      </div>
+      <!--BLOG CONTENT END-->
+    </div>
+  </body>
+</html>
