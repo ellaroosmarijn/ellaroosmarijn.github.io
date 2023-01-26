@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Javascript and the DOM</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700"
+    />
+    <link rel="Stylesheet" href="../styles/main.css" />
+    <link rel="Stylesheet" href="../styles/blog.css" />
+  </head>
+
+  <body>
+    <div class="margin-control">
+      <!--TOPNAV BEGIN-->
+      <div class="topnav">
+        <a class="topnav__logo" href="/">A Coding Journey.</a>
+        <a class="topnav__link" href="/">Home</a>
+      </div>
+      <!--TOPNAV END-->
+
+      <!--HERO BEGIN-->
+      <div class="heading">
+        <h1 class="heading__title">Javascript and the DOM</h1>
+        <p class="heading__strapline">Sprint Three</p>
+      </div>
+      <!--HERO END-->
+
+      <!--BLOG CONTENT BEGIN-->
+      <div class="blog-content">
+        <section>
+          <h3><strong>JavaScript in Relation to HTML and CSS.</strong></h3>
+          <strong>What is Javascript?</strong>
+          <p>
+            Javascript is a programming language that is used to create
+            interactive effects on the web and to build web-based applications.
+            In short, Javascript adds behaviour to websites.
+          </p>
+          <strong>The Relationship Between Javascript, HTML and CSS.</strong>
+          <p>
+            HTML is the ‘bones’ or structure of a webpage. On its own it
+            prepares the content of a webpage with no formatting. CSS then
+            formats and styles the HTML content, to make a more user friendly
+            interface. Javascript is a third and very important layer of a
+            webpage. Javascript allows the webpage to be interactive with the
+            user by returning a value or change according to the set action.
+            Without Javascript a webpage created solely from HTML and CSS may be
+            less engaging with the user due to a less responsive design.
+          </p>
+          <strong
+            >What is an Analogy for the Relationship Between Javascript, HTML
+            and CSS?</strong
+          >
+          <p>
+            An analogy for this relationship would be that of the human body.
+            The HTML would be the skeleton, since it forms the bones of the
+            webpage. CSS would be the skin because it provides styling and
+            formatting that make the webpage more appealing to a user, just as
+            skin can change how someone looks. Javascript would be the muscles
+            because it adds behaviour and interactive features to a website,
+            like muscles provide movement and behaviour in people.
+          </p>
+        </section>
+        <section>
+          <h3><strong>Control Flow and Loops.</strong></h3>
+          <strong>What is Control Flow?</strong>
+          <p>
+            Control flow in programming is the order in which statements and
+            functions must be made. This is because a function cannot be called
+            before it has been defined, just as you would name a puppy before
+            trying to call it over to you. Control flow allows for the developer
+            to choose which sections of code to run and when. An example of
+            control flow in coding would be:
+          </p>
+          <code>
+            function eatPie(pie) { if (pie <= 10) { text = “Eat pies!”; } else {
+            text = “Too many pies to eat!”; } }
+          </code>
+          <p>
+            Here, the function <code>eatPie</code> has been defined, which means
+            that if we want to ‘call’ the function (have it shown on the
+            webpage) we can call it after this function. The next part of the
+            code is the <code>if-else</code> statement. The if else statement is
+            telling the computer which code to run and when. So if there are ten
+            or more pies, the webpage will show the text
+            <code>“Eat pies!”</code>. The ‘else’ part of the
+            <code>if-else</code> statement tells the computer that
+            <em>only</em> if there are more than ten pies to show the text
+            <code>“Too many pies to eat!”</code>.
+          </p>
+          <strong>What is a Loop?</strong>
+          <p>
+            A loop is typically written in Javascript and is a sequence of code
+            or instructions that are repeated until a condition has been met.
+            Generally a loop runs a specific number of times, or until it has
+            found or changed specific data that was predefined. An everyday
+            example of a loop is when you shop with a grocery list. A grocery
+            list could be considered as an array (a collection of items) that
+            the shopper must read through to check off every item. The action of
+            the shopper checking the list repeatedly is like a loop that will
+            only cease to occur when there are no items left on the list. An
+            example of a loop would be written as:
+          </p>
+          <code>
+            function groceryList(‘apples’, ‘bananas’, ‘bread, ‘milk’, ‘toilet
+            paper’) { for (let i = 0; i < 5; i++) { console.log(groceryList[i])
+            } }
+          </code>
+          <p>
+            Here, the funcion <code>groceryList</code> has an array (list) of
+            food items as a parameter. It will begin at the first item (as
+            indicated by <code>i = 0</code>) and continue through each item in
+            numerical order (as indicated by <code>i++</code>) until it reaches
+            the fifth item of toilet paper (as indicated by <code>i < 5</code>).
+            This is essentially the written version of what someone would do
+            when they go through their grocery list at the supermarket.
+          </p>
+          <p>
+            Since repetitive tasks are reasonably common in programming, loops
+            become important for minimising the chance of bugs and saving time
+            by only writing a task once.
+          </p>
+        </section>
+        <section>
+          <h3><strong>What are Functions and Why Are They Helpful?</strong></h3>
+          <strong>What is a Function?</strong>
+          <p>
+            Essentially every programming language lets you create ‘blocks’ of
+            code that perform specific tasks. The blocks of code are called
+            functions. They are helpful because they enable a developer to write
+            a function once and recall it in multiple places on the file.
+            Additionally, it helps with breaking a larger set of instructions or
+            tasks into smaller chunks. A function can be written as:
+          </p>
+          <code>
+            function goodMorning(name) { return ‘Good morning ’ + name } let
+            goodMorningResult = goodMorning(‘Maye’)
+          </code>
+          <p>
+            Here, the function is <code>goodMorning</code> that has a parameter
+            of a name. The name is defined at the bottom of the code a ‘Maye’,
+            although any name can be entered here. The function will then return
+            the text “Good morning Maye”.
+          </p>
+        </section>
+        <section>
+          <h3><strong>Arrays and Objects.</strong></h3>
+          <strong>What is an Array?</strong>
+          <p>
+            An array is a data structure consisting of a collection of items
+            (e.g. variables or values). In an array each item of data has an
+            index number which starts at zero. For instance, in the image below
+            the array contains the values <code>[73, 98, 86, 61, 96]</code>. In
+            this array <code>73</code> has an index number of 0.
+          </p>
+          <img
+          src="https://www.oreilly.com/api/v2/epubs/9781449356835/files/figs/cspr_0601.png"
+          alt="Array image"
+          width="250px"
+        />
+          <p>
+            You can access the data in an array by referring to its index number
+            <code>i = 3</code>, like in the earlier example of the code for a
+            loop. On the other hand, accessing data from an object is a very
+            different process.
+          </p>
+          <strong>What is an Object?</strong>
+          <p>
+            An object is a key value storage structure with ‘prototypical
+            inheritance’ where if a key is not on an object, it will check if
+            the key is on a parent. An object can inherit methods and values
+            from another object. To access an object you need a variable with a
+            reference that contains the object. From here you can either use the
+            dot notation or the bracket notation. Let’s say that we wanted to
+            find the length of the object:
+          </p>
+          <code>
+            let names = [‘Maye’, ‘Freya’, ‘Noah’, ‘Elijah’, ‘Ollie’]
+          </code>
+          <p>
+            With dot notation you would use <code>names.length</code>, and with
+            bracket notation you would use <code>names[length]</code>. In the
+            scenario code would return a value of five, because there are five
+            values.
+          </p>
+        </section>
+        <section>
+          <h3><strong>The Dom.</strong></h3>
+          <strong>An Explanation of the DOM.</strong>
+          <p>
+            DOM stands for document object model, and can be thought of as an
+            object representation of your entire html document. This is how the
+            dom views your document:
+          </p>
+          <img
+            src="https://www.kirupa.com/html5/images/DOM_js_72.png"
+            alt="DOM's view of a document."
+            width="250px"
+          />
+          <p>Let's break down the diagram above.</p>
+          <ul>
+            <li>
+              <em>Window</em> - The window object has a relationship with the
+              document, because it deals with the browser window. The document
+              operates off the widow object, and deals with everything that
+              lives in the document, as shown in the diagram above.
+            </li>
+            <li><em>Document</em> - The DOM describes the document.</li>
+            <li>
+              <em>Node</em> - Every object located within a document is a type
+              of node. Nodes can be elements, attributes, text content,
+              comments, document-related stuff, and various other things.
+            </li>
+            <li>
+              <em>Element</em> - Every element has an html element, which has an
+              object representation that backs it. For instance, the
+              HTMLBRElement represents the BR tag, the HTMLButtonElement
+              represents the button tag, and the HTMLDivElement represents the
+              DIV tag.
+            </li>
+          </ul>
+        </section>
+        <section>
+          <strong>The Importance of Elements.</strong>
+          <p>
+            The object representation that is offered by elements is important
+            because it provides access to the elements in JavaScript and allows
+            you to read, write, modify, and create elements dynamically. A
+            diagram of this relationship between Nodes, elements and HTML
+            elements would be drawn as:
+          </p>
+          <img
+            src="https://www.kirupa.com/html5/images/node_hierarchy_72.png"
+            alt="Relationship between nodes, elements and HTML elements."
+            width="250px"
+          />
+        </section>
+        <section>
+          <strong>Editing in the DOM.</strong>
+          <p>
+            This piece of code
+            <code
+              ><a href="index.html" target="_blank">Click this link</a></code
+            >
+            is represented by four nodes in the DOM.
+          </p>
+
+          <ol>
+            <li>The HTMLAnchorElement, which is the parent element.</li>
+            <li>
+              The HTMLAnchorElement.href (this is an attribute node), which is a
+              child node.
+            </li>
+            <li>
+              The HTMLAnchorElement.target (this is also an attribute node),
+              which is a child node.
+            </li>
+            <li>The text node ‘Click this link’, which is a child node.</li>
+          </ol>
+          <p>
+            To edit the anchor element in the DOM, you will first need to go to
+            the document interface. Once you’re in the interface you can use
+            either the <code>document.querySelector()</code> to find the first
+            selector or the <code>document.querySelectorAll()</code> to find all
+            of the selector. In this scenario, we’ll use the
+            <code>document.querySelector()</code> since we have written only one
+            anchor element. The code should look like this:
+          </p>
+          <code>let element = document.querySelector(‘a’);</code>
+          <p>
+            We have now selected the first ‘a’ element. Let’s say that we want
+            to change the colour of the link from blue to green. To do this, we
+            will use the <code>HTMLElement.style</code> property to change the
+            CSS on the HTML anchor tag. This specific tag is used because the
+            anchor tag is a child of the HTMLElement node, and will inherit its
+            properties. The <code>.style.color</code> is added to the
+            <code>HTMLElement</code> to reference the CSS (style) and that we
+            want the colour to change (.color). The code for changing the colour
+            should look like this:
+          </p>
+          <code>element.style.color = ‘green’;</code>
+          <p>
+            If we had more than one anchor element we could have used the
+            <code>document.querySelectorAll()</code> to change all of the anchor
+            element’s colours from blue to green.
+          </p>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
