@@ -264,24 +264,28 @@ let goodMorningResult = goodMorning(‘Maye’)
         <section>
           <strong>Editing in the DOM.</strong>
           <p>
-            This piece of code
-            <!-- prettier-ignore -->
-            <code
-              ><a href="index.html" target="_blank">Click this link</a></code
-            >
-            is represented by four nodes in the DOM.
+            The piece of code below is represented by four nodes in the DOM:
           </p>
+          <!-- prettier-ignore -->
+          <code>
+&lt;a href="#index.html" target="_blank"&gt;Click this link&lt;/a&gt;
+          </code>
           <ol>
-            <li>The HTMLAnchorElement, which is the parent element.</li>
             <li>
-              The HTMLAnchorElement.href (this is an attribute node), which is a
-              child node.
+              The HTMLAnchorElement (<a></a>), which is the parent element.
             </li>
             <li>
-              The HTMLAnchorElement.target (this is also an attribute node),
-              which is a child node.
+              The <code>href</code>, or HTMLAnchorElement.href, is an attribute
+              node and a child node.
             </li>
-            <li>The text node ‘Click this link’, which is a child node.</li>
+            <li>
+              The <code>target</code>, or HTMLAnchorElement.target, is an
+              attribute node and a child node.
+            </li>
+            <li>
+              The text node ‘Click this link’ also is a child node but it is not
+              an attribute node.
+            </li>
           </ol>
           <p>
             To edit the anchor element in the DOM, you will first need to go to
